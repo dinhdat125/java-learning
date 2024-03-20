@@ -1,0 +1,68 @@
+1. Tính chất đóng gói (Encapsulation)
+
+- khái niệm:
+	tính chất đóng gói được thể hiện qua các từ khóa của access modifier (public, private, protected, )
+	sử dụng ở: atribute(global variable), method(function), type(class, interface, abstract class, enum)
+	+ private	: đóng gói trong phạm vi của class
+	+ public	: sử dụng mọi nơi
+	+ 			: đóng gói trong phạm vi của package
+	+ protected	: đóng gói trong phạm vi của package 
+					và những class có quan hệ cha/con bên ngoài package
+					
+2. Tính chất đa hình (Polymorphism)
+
+- khái niệm:
+	tính chất đa hình có 2 loại: phương thức & đối tượng
+	+ đa hình trong phương thức: là 1 phương thức nhưng mà sẽ có nhiều phần thực thi, thể hiện khác nhau
+		overloading -> 2 hay nhiều phương thức được gọi là overload nếu
+			+ cùng: 1 type(class), tên hàm
+			+ khác:
+				KDL truyền vào của tham số
+				số lượng tham số truyền vào
+		overriding -> khi có 1 hàm trong class cha, hàm đó được định nghĩa lại trong class con
+			( liên quan đến kế thừa )
+			hàm override trong class con bắt buộc phải chung phần khai báo với hàm trong class cha
+			void log() { //declaration
+			
+			}
+	+ đa hình trong đối tượng
+	
+3. Tính thừa kế (Inheritance )
++ lớp cha là class
+	khi: có các thuộc tính chung
+	-> con: k bắt buộc override hàm từ cha
+	
++ lớp cha là interface
+	khi: có các hàm chung chưa biết phần thực thi như nào
+	trước Java 8: interface chỉ chứa hàm trừu tượng
+	-> con bắt buộc override hàm trừu tượng từ cha
+	
+	[Abstract] Class extends [Abstract] Class
+	[Abstract] Class implements Interface1, Interface2, ...
+	
+	Interface extends Interface1, Interface2, ...
+	
+	Abstract class implements Interface hoặc Interface extends Interface
+	-> k bắt buộc phải override abstract method
+	
+4. Tính trừu tượng (Abstraction)
+* tính chất trừu tượng được thể hiện qua:
+	+ class: là k.n trừu tượng dùng để chỉ tập hợp các đối tượng có chung thuộc tính và phương thức
+	+ abstract method trong interface, abstract class
+		-> tạo ra các abstract method chung cho KDL cha, sau đó con sẽ override
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
